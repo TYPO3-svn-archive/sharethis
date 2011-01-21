@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'sharethis'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="flexform.sheets.common">Common</label>
+			<label index="flexform.sheets.metatags">Meta Tags</label>
+			<label index="flexform.settings.show_button_for_email">Show 'email'-Button</label>
+			<label index="flexform.settings.show_button_for_facebook">Show 'facebook'-Button</label>
+			<label index="flexform.settings.show_button_for_twitter">Show 'twitter'-Button</label>
+			<label index="flexform.settings.show_button_for_sharethis">Show 'sharethis'-Button</label>
+			<label index="flexform.settings.share_url">URL (which we want to share; optional: default is the requested URL)</label>
+			<label index="flexform.settings.add_metatags">Add Meta Tags (if you want to specify the page in detail)</label>
+			<label index="flexform.settings.metatag_title">Title</label>
+			<label index="flexform.settings.metatag_description">Description</label>
+			<label index="flexform.settings.metatag_image">Preview-Image</label>
+			<label index="flexform.settings.metatag_sitename">Site-Name</label>
+			<label index="flexform.settings.metatag_email">Email</label>
+			<label index="flexform.settings.metatag_type">Content-Type</label>
+			<label index="flexform.settings.metatag_type.none"></label>
+			<label index="flexform.settings.metatag_type.website">Website</label>
+			<label index="flexform.settings.metatag_type.video">Video</label>
+			<label index="flexform.settings.metatag_type.audio">Audio</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="flexform.sheets.common">Allgemein</label>
+			<label index="flexform.sheets.metatags">Meta Tags</label>
+			<label index="flexform.settings.show_button_for_email">Zeige 'email'-Button</label>
+			<label index="flexform.settings.show_button_for_facebook">Zeige 'facebook'-Button</label>
+			<label index="flexform.settings.show_button_for_twitter">Zeige 'twitter'-Button</label>
+			<label index="flexform.settings.show_button_for_sharethis">Zeige 'sharethis'-Button</label>
+			<label index="flexform.settings.share_url">URL (welche Sie teilen möchten; optional: Default ist die aufgerufene URL)</label>
+			<label index="flexform.settings.add_metatags">Füge Meta Tags zur Seite hinzu (wenn Sie die Seite detailierter beschreiben möchten)</label>
+			<label index="flexform.settings.metatag_title">Titel</label>
+			<label index="flexform.settings.metatag_description">Beschreibung</label>
+			<label index="flexform.settings.metatag_image">Vorschau-Bild</label>
+			<label index="flexform.settings.metatag_sitename">Name der Website</label>
+			<label index="flexform.settings.metatag_email">Email</label>
+			<label index="flexform.settings.metatag_type">Art des Inhalts</label>
+			<label index="flexform.settings.metatag_type.none"></label>
+			<label index="flexform.settings.metatag_type.website">Website</label>
+			<label index="flexform.settings.metatag_type.video">Video</label>
+			<label index="flexform.settings.metatag_type.audio">Audio</label>
+		</languageKey>
+	</data>
+</T3locallang>

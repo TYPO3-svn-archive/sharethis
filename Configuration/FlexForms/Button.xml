@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<common>
+			<ROOT>
+				<type>array</type>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:sharethis/Resources/Private/Language/locallang_db.xml:flexform.sheets.common</sheetTitle>
+				</TCEforms>
+				<el>
+					<settings.show_button_for_email>
+						<TCEforms>
+							<label>LLL:EXT:sharethis/Resources/Private/Language/locallang_db.xml:flexform.settings.show_button_for_email</label>
+							<config>
+								<type>check</type>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</settings.show_button_for_email>
+					<settings.show_button_for_facebook>
+						<TCEforms>
+							<label>LLL:EXT:sharethis/Resources/Private/Language/locallang_db.xml:flexform.settings.show_button_for_facebook</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</settings.show_button_for_facebook>
+					<settings.show_button_for_twitter>
+						<TCEforms>
+							<label>LLL:EXT:sharethis/Resources/Private/Language/locallang_db.xml:flexform.settings.show_button_for_twitter</label>
+							<config>
+								<type>check</type>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</settings.show_button_for_twitter>
+					<settings.show_button_for_sharethis>
+						<TCEforms>
+							<label>LLL:EXT:sharethis/Resources/Private/Language/locallang_db.xml:flexform.settings.show_button_for_sharethis</label>
+							<config>
+								<type>check</type>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</settings.show_button_for_sharethis>
+					<settings.share_url>
+						<TCEforms>
+							<label>LLL:EXT:sharethis/Resources/Private/Language/locallang_db.xml:flexform.settings.share_url</label>
+							<config>
+								<type>input</type>
+								<eval>trim</eval>
+								<size>20</size>
+							</config>
+						</TCEforms>
+					</settings.share_url>				
+				</el>
+			</ROOT>
+		</common>
+		<metatags>
+			<ROOT>
+				<type>array</type>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:sharethis/Resources/Private/Language/locallang_db.xml:flexform.sheets.metatags</sheetTitle>
+				</TCEforms>
+				<el>
+					<settings.add_metatags>
+						<TCEforms>
+							<label>LLL:EXT:sharethis/Resources/Private/Language/locallang_db.xml:flexform.settings.add_metatags</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</settings.add_metatags>
+					<settings.metatag_title>
+						<TCEforms>
+							<label>LLL:EXT:sharethis/Resources/Private/Language/locallang_db.xml:flexform.settings.metatag_title</label>
+							<config>
+								<type>input</type>
+								<eval>trim</eval>
+								<size>20</size>
+								<max>255</max>
+							</config>
+						</TCEforms>
+					</settings.metatag_title>
+					<settings.metatag_description>
+						<TCEforms>
+							<label>LLL:EXT:sharethis/Resources/Private/Language/locallang_db.xml:flexform.settings.metatag_description</label>
+							<config>
+								<type>input</type>
+								<eval>trim</eval>
+								<size>20</size>
+								<max>255</max>
+							</config>
+						</TCEforms>
+					</settings.metatag_description>
+					<settings.metatag_type>
+						<TCEforms>
+							<label>LLL:EXT:sharethis/Resources/Private/Language/locallang_db.xml:flexform.settings.metatag_type</label>
+							<config>
+								<type>select</type>
+								<maxitems>1</maxitems>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:sharethis/Resources/Private/Language/locallang_db.xml:flexform.settings.metatag_type.none</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:sharethis/Resources/Private/Language/locallang_db.xml:flexform.settings.metatag_type.website</numIndex>
+										<numIndex index="1">website</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:sharethis/Resources/Private/Language/locallang_db.xml:flexform.settings.metatag_type.video</numIndex>
+										<numIndex index="1">video</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">LLL:EXT:sharethis/Resources/Private/Language/locallang_db.xml:flexform.settings.metatag_type.audio</numIndex>
+										<numIndex index="1">audio</numIndex>
+									</numIndex>
+								</items>
+								<default>website</default>
+							</config>
+						</TCEforms>
+					</settings.metatag_type>
+					<settings.metatag_image>
+						<TCEforms>
+							<label>LLL:EXT:sharethis/Resources/Private/Language/locallang_db.xml:flexform.settings.metatag_image</label>
+							<config>
+								<type>group</type>
+								<internal_type>file</internal_type>
+								<allowed>jpg,png,gif</allowed>
+								<max_size>10000</max_size>
+								<uploadfolder>uploads/tx_sharethis/</uploadfolder>
+								<size>5</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+							</config>
+						</TCEforms>
+					</settings.metatag_image>
+					<settings.metatag_sitename>
+						<TCEforms>
+							<label>LLL:EXT:sharethis/Resources/Private/Language/locallang_db.xml:flexform.settings.metatag_sitename</label>
+							<config>
+								<type>input</type>
+								<eval>trim</eval>
+								<size>20</size>
+								<max>255</max>
+							</config>
+						</TCEforms>
+					</settings.metatag_sitename>
+					<settings.metatag_email>
+						<TCEforms>
+							<label>LLL:EXT:sharethis/Resources/Private/Language/locallang_db.xml:flexform.settings.metatag_email</label>
+							<config>
+								<type>input</type>
+								<eval>trim</eval>
+								<size>20</size>
+								<max>255</max>
+							</config>
+						</TCEforms>
+					</settings.metatag_email>
+				</el>
+			</ROOT>
+		</metatags>
+	</sheets>
+</T3DataStructure>
