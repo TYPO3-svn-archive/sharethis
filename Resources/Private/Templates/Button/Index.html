@@ -9,11 +9,6 @@
 
 	<!-- show buttons (if you need it, you can change this HTML-code) -->
 	<div class="button-bar">
-		<f:if condition="{showButtonForEmail} > 0">
-			<f:then>
-				<span class="st_email" st_url="{shareUrl}"></span>
-			</f:then>
-		</f:if>
 		<f:if condition="{showButtonForFacebook} > 0">
 			<f:then>
 				<span class="st_facebook" st_url="{shareUrl}"></span>
@@ -22,6 +17,11 @@
 		<f:if condition="{showButtonForTwitter} > 0">
 			<f:then>
 				<span class="st_twitter" st_url="{shareUrl}"></span>
+			</f:then>
+		</f:if>
+		<f:if condition="{showButtonForEmail} > 0">
+			<f:then>
+				<span class="st_email" st_url="{shareUrl}"></span>
 			</f:then>
 		</f:if>
 		<f:if condition="{showButtonForSharethis} > 0">
