@@ -3,8 +3,11 @@
  * 
  * 1. the URL htts://w.sharethis.com/button/buttons.js (if you want to use the plugin on
  *    pages, which uses HTTPS-protocol) returns at this time (26.01.2011) an invalid SSL-certificate!
- * 
+ *
  * 2. this javascript-code doesn't support HTTPS
+ *    We marked bugfixes in this code with the marker 'bugfix'
+ *
+ * 3. there's a javascript-bug (in firefox) if we use the sharethis-buttons together with googlemap-API
  *    We marked bugfixes in this code with the marker 'bugfix'
  */
 if (typeof(stLight) == "undefined" && typeof(SHARETHIS) == "undefined") {
@@ -249,6 +252,12 @@ if (typeof(stLight) == "undefined" && typeof(SHARETHIS) == "undefined") {
         var c = new RegExp(/^st_(.*?)$/);
         var a = d.length;
         for (var b = 0; b < a; b++) {
+        	/**
+        	 * bugfix: (to get this API working together with googlemap-API)
+        	 */
+        	if(typeof d[b].className.match != 'function') {
+        		continue;
+        	}
             if (d[b].className.match(c) && d[b].className.match(c).length >= 2 && d[b].className.match(c)[1]) {
                 return true
             }
@@ -619,6 +628,12 @@ stButtons.locateElements = function () {
     var l = new RegExp(/^st_(.*?)$/);
     var k = f.length;
     for (var j = 0; j < k; j++) {
+    	/**
+    	 * bugfix: (to get this API working together with googlemap-API)
+    	 */
+    	if(typeof f[j].className.match != 'function') {
+    		continue;
+    	}
         if (f[j].className.match(g) && f[j].className.match(g).length >= 2 && f[j].className.match(g)[1]) {
             if (stButtons.testElem(f[j]) == false) {
                 stButtons.elemArr.push(f[j]);
