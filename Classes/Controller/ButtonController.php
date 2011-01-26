@@ -67,6 +67,7 @@ class Tx_Sharethis_Controller_ButtonController extends Tx_Extbase_MVC_Controller
 		$this->view->assign ( 'showButtonForFacebook', (integer) $this->settings['show_button_for_facebook'] );
 		$this->view->assign ( 'showButtonForTwitter', (integer) $this->settings['show_button_for_twitter'] );
 		$this->view->assign ( 'showButtonForSharethis', (integer) $this->settings['show_button_for_sharethis'] );
+		$this->view->assign ( 'shareTitle', $this->getTitleToShare() );
 		$this->view->assign ( 'shareUrl', $this->getUrlToShare() );
 		$this->view->assign ( 'addMetatags', (integer) $this->settings['add_metatags'] );
 		$this->view->assign ( 'metatagTitle', $this->settings['metatag_title'] );
@@ -145,6 +146,18 @@ class Tx_Sharethis_Controller_ButtonController extends Tx_Extbase_MVC_Controller
 	 */
 	private function getPublisherId() {
 		return $this->conf['publisher_id'];
+	}
+	/**
+	 * @return string
+	 */
+	private function getTitleToShare() {
+		$title = '';
+		if(!empty($this->settings['metatag_title'])) {
+			$title = $this->settings['metatag_title'];
+		} elseif(isset($GLOBALS['TSFE']) && isset($GLOBALS['TSFE']->page) && isset($GLOBALS['TSFE']->page['title'])) {
+			$title = $GLOBALS['TSFE']->page['title'];
+		}
+		return $title;
 	}
 	/**
 	 * @return string

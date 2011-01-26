@@ -3,22 +3,22 @@
 		<f:translate key="textForShareThis" />
 		<f:if condition="{showButtonForFacebook} > 0">
 			<f:then>
-				<span class="st_facebook" st_url="{shareUrl}"></span>
+				<span class="st_facebook" st_title="{shareTitle}" st_url="{shareUrl}"></span>
 			</f:then>
 		</f:if>
 		<f:if condition="{showButtonForTwitter} > 0">
 			<f:then>
-				<span class="st_twitter" st_url="{shareUrl}"></span>
+				<span class="st_twitter" st_title="{shareTitle}" st_url="{shareUrl}"></span>
 			</f:then>
 		</f:if>
 		<f:if condition="{showButtonForEmail} > 0">
 			<f:then>
-				<span class="st_email" st_url="{shareUrl}"></span>
+				<span class="st_email" st_title="{shareTitle}" st_url="{shareUrl}"></span>
 			</f:then>
 		</f:if>
 		<f:if condition="{showButtonForSharethis} > 0">
 			<f:then>
-				<span class="st_sharethis" st_url="{shareUrl}" displayText="{f:translate(key:'textForButtonShareThis')}"></span>
+				<span class="st_sharethis" st_title="{shareTitle}" st_url="{shareUrl}" displayText="{f:translate(key:'textForButtonShareThis')}"></span>
 			</f:then>
 		</f:if>
 </f:section>
