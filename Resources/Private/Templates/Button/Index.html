@@ -1,14 +1,6 @@
-<div class="tx_sharethis">
-	<!-- don't delete this HTML-code, because we need it! -->
-	<script type="text/javascript">
-		// define options (we use them in Resources/Public/Js/tx_sharethis.js)
-		var publisherId = '{publisherId}';
-	</script>
-	<div id="tx_sharethis_javascriptPlaceholder"></div>
-
-
-	<!-- show buttons (if you need it, you can change this HTML-code) -->
-	<div class="button-bar">
+<f:layout name="default" />
+<f:section name="main">
+		<f:translate key="textForShareThis" />
 		<f:if condition="{showButtonForFacebook} > 0">
 			<f:then>
 				<span class="st_facebook" st_url="{shareUrl}"></span>
@@ -29,5 +21,4 @@
 				<span class="st_sharethis" st_url="{shareUrl}" displayText="{f:translate(key:'textForButtonShareThis')}"></span>
 			</f:then>
 		</f:if>
-	</div>
-</div>
+</f:section>

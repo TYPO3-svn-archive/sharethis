@@ -8,10 +8,12 @@
 		<languageKey index="default" type="array">
 			<label index="publisherIdIsNotSet">publisher-ID is not set!</label>
 			<label index="textForButtonShareThis">share this!</label>
+			<label index="textForShareThis">share this on: </label>
 		</languageKey>
 		<languageKey index="de" type="array">
 			<label index="publisherIdIsNotSet">publisher-ID ist nicht konfiguriert!</label>
 			<label index="textForButtonShareThis">Gefällt mir!</label>
+			<label index="textForShareThis">Jetzt teilen auf: </label>
 		</languageKey>
 	</data>
 </T3locallang>

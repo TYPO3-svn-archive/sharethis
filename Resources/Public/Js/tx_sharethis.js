@@ -20,7 +20,16 @@ var tx_sharethis = {
 				publisher: publisherId
 			});
 		} else {
+			// wait, loading sharethis-API is not finished
 			setTimeout("tx_sharethis.setOptions()", 500);
+		}
+	},
+	/**
+	 * reload sharethis-buttons (we need this if we use this plugin in AJAX-requests)
+	 */
+	reloadButtons:function() {
+		if($('.tx_sharethis .button-bar span:first').html() == '') {
+			stButtons.onReady();
 		}
 	}
 }
