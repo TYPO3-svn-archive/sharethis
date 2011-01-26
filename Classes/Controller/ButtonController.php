@@ -137,6 +137,8 @@ class Tx_Sharethis_Controller_ButtonController extends Tx_Extbase_MVC_Controller
 	 * load javascript-files
 	 */
 	protected function loadJsFiles() {
+		$file = t3lib_extMgm::siteRelPath ( 'sharethis' ) . 'Resources/Public/Js/shareThis_localCopyFromShareThis.js';
+		$GLOBALS ['TSFE']->getPageRenderer ()->addJsFile ( $file );
 		$file = t3lib_extMgm::siteRelPath ( 'sharethis' ) . 'Resources/Public/Js/tx_sharethis.js';
 		$GLOBALS ['TSFE']->getPageRenderer ()->addJsFile ( $file );
 	}
