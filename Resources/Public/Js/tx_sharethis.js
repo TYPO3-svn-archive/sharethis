@@ -20,7 +20,8 @@ var tx_sharethis = {
 	 */
 	reloadButtons:function() {
 		if($('.tx_sharethis .button-bar span:first').html() == '') {
-			stButtons.onReady();
+		    stButtons.makeButtons();
+		    stWidget.init();
 		}
 	}
 }
