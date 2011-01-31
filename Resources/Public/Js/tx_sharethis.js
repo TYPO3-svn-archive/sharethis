@@ -3,6 +3,16 @@ var tx_sharethis = {
 		tx_sharethis.setOptions();
 	},
 	/**
+	 * init stWidget (after javascript has created the frame with ID 'stLframe')
+	 */
+	initStWidget:function() {
+		if(typeof window.frames.stLframe != 'object') {
+			setTimeout('tx_sharethis.initStWidget()', 300);
+		} else {
+			stWidget.init();
+		}
+	},
+	/**
 	 * set options (we has defined them inside the plugin-template Resources/Private/Templates/Button/Index.html)
 	 */
 	setOptions:function() {
@@ -21,7 +31,7 @@ var tx_sharethis = {
 	reloadButtons:function() {
 		if($('.tx_sharethis .button-bar span:first').html() == '') {
 		    stButtons.makeButtons();
-		    stWidget.init();
+		    tx_sharethis.initStWidget();
 		}
 	}
 }
